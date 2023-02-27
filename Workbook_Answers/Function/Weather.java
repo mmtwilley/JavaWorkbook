@@ -7,7 +7,9 @@ public class Weather {
         //Task 3 - Call the printTemperatures function. 
 
         printTemperatures(noon, fahrenheitToCelsius(noon));
+        System.out.println("\n");
         printTemperatures(evening, fahrenheitToCelsius(evening));
+        System.out.println("\n");
         printTemperatures(midnight, fahrenheitToCelsius(midnight));
     }
 

@@ -7,7 +7,14 @@ public class WorkSchedule {
         boolean holiday = true;
          
         // IF - ELSE IF - ELSE HERE!
-        
+
+            if(day < 6 && holiday == true){
+                System.out.println("woohoo, no work!");
+            } else if( day < 6 && holiday == false) {
+                System.out.println(" Wake up at 7:00 :(");
+            } else {
+                System.out.println("It's the weekend, no work!");
+            }
         
         }
 
