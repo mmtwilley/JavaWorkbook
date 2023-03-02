@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch DiceJack",
+            "request": "launch",
+            "mainClass": "Workbook_Answers.Function.Dice_Project.DiceJack",
+            "projectName": "Java-Bootcamp-Resources-main_3a3ebd62"
+        },
+        {
+            "type": "java",
             "name": "Launch Parameters",
             "request": "launch",
             "mainClass": "Demo.Function.Parameters",
