@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.function.Function;
 
 public class RockPaperScissors {
     public static void main(String[] args) {
@@ -32,7 +33,13 @@ public class RockPaperScissors {
         System.out.println("Great");
         System.out.println("rock - paper - scissors, shoot!");
         String userChoice = scan.nextLine();
+        if(!userChoice.equals("rock") || !userChoice.equals("scissors") || !userChoice.equals("paper")){
+            System.out.println("Pick the correct answer next time!");
+            System.exit(0);
+        }
+ 
 
+        printResult(userChoice, computerChoice());
 
         scan.close();
     }
@@ -63,7 +70,7 @@ public class RockPaperScissors {
                 result =  "paper";
                 break;
             case 3:
-                 result = "scissor";
+                 result = "scissors";
                  break;
         }
         return result;
@@ -100,10 +107,25 @@ public class RockPaperScissors {
      */
 
     public static String result(String yourChoice, String computerChoice) {
-        String result = "";
 
-        return result;
-      }
+
+        if(yourChoice.equals(computerChoice)){
+            return "It's a tie";
+        }
+      
+        if(yourChoice.equals("rock") && computerChoice.equals("paper")){
+            return "You lose!";
+        }
+        if(yourChoice.equals("scissors") && computerChoice.equals("rock")){
+            return "You lose!";
+        }
+        if(yourChoice.equals("paper") && computerChoice.equals("rock")){
+            return "You lose!";
+        }
+
+
+        return "You win!";
+    }
  
      //Task 5  – Write a function that prints your choice, the computer's, and the result.
 
@@ -121,4 +143,16 @@ public class RockPaperScissors {
      *      – prints: <result>
      */
 
+
+     public static void printResult(String yourChoice, String computerChoice){
+         System.out.println("Computer's choice: " + computerChoice);
+         System.out.println("Your Choice: " + yourChoice);
+         System.out.println(result(yourChoice, computerChoice));
+     }
+
+     public static void printResult(String yourChoice, String computerChoice, String result){
+        System.out.println("Computer's choice: " + computerChoice);
+        System.out.println("Your Choice: " + yourChoice);
+        System.out.println(result);
+    }
 }

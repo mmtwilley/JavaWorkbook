@@ -8,7 +8,7 @@ public class Beer {
        int beerQuanity = scanner.nextInt();
        System.out.println();
        for(int i = beerQuanity; i >= 1; i--){
-            sing(beerQuanity);
+            sing(i);
        }
 
        scanner.close();

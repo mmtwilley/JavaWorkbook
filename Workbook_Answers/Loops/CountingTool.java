@@ -10,9 +10,9 @@ public class CountingTool {
 
         System.out.println("Great! Here how it is done.");
         for(int i = 1; i <= answer; i++){
-            System.out.print(i + " " );
+            System.out.print(i + " ");
         }
-
+        System.out.println();
 
         scan.close();
     }
