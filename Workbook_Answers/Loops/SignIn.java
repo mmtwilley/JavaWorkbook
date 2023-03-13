@@ -19,11 +19,11 @@ public class SignIn {
 
         // see Learn the Part for the remaining instructions.
         
-        while(!(usernameEntry.equals(username)) || !(passwordEntry.equals(password))){
+        while(!usernameEntry.equals(username)|| !passwordEntry.equals(password)){
             System.out.println("\nIncorrect, please try again!\n");
-            System.out.println("- Username: ");
+            System.out.print("- Username: ");
             usernameEntry = scan.nextLine();
-            System.out.println("- Password: ");
+            System.out.print("- Password: ");
             passwordEntry = scan.nextLine();
         }
         

@@ -8,15 +8,15 @@ public class CounterTool {
         System.out.println("Oh, ok...");
 
 
-        System.out.print("Pick a number to count by");
+        System.out.print("Pick a number to count by ");
         int count = scan.nextInt();
-        System.out.print("Pick a number to start counting from:");
+        System.out.print("Pick a number to start counting from: ");
         int start = scan.nextInt();
-        System.out.print(" Pick a number to count to");
+        System.out.print("Pick a number to count to ");
         int stop = scan.nextInt();
 
         for(int i = start; i <=stop; i += count ){
-            System.out.print(i);
+            System.out.print(i + " ");
         }
 
 

@@ -19,7 +19,17 @@ public class Pokerito {
         >> • Ready? Type anything if you are.
         |
         */
-        
+  
+        System.out.println("Let's play Pokerito. Type anything when you're ready");
+        System.out.println("\n");
+        System.out.println("• There are two players, you and the computer.");
+        System.out.println("• The dealer will give each player one card.");
+        System.out.println("• Then, the dealer will draw five cards (the river)");
+        System.out.println("• The player with the most river matches wins!");
+        System.out.println("• If the matches are equal, everyone's a winner!");
+        System.out.println("\n");
+        System.out.println("• Ready? Type anything if you are.");     
+        scan.nextLine();
 
         /*Task 3: Present the user with a card
          println 'Here's your card:'
@@ -29,8 +39,21 @@ public class Pokerito {
          <show computer's card>
         */
 
+        System.out.println("Here's your card:");
+        String userCard = randomCard();
+        System.out.println(userCard);
+        System.out.println("\n");
+        System.out.println("Here's the computer's card:");
+        String  computerCard = randomCard();
+        System.out.println(computerCard);
+
+
+
+
+
         int yourMatches = 0;
         int computerMatches =0;
+        
 
         /** Task 4 - Draw five cards
          * 
@@ -73,7 +96,7 @@ public class Pokerito {
 
     public static String randomCard(){
        double randomNum = Math.random()*13;
-       int generator = (int) randomNum + 13; 
+       int generator = (int) randomNum + 1; 
 
        switch(generator){
         case 1:   

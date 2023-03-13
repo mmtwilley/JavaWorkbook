@@ -17,6 +17,7 @@ public class Doubles {
 
             printDice(dice1, dice2);
         }
+        System.out.println("You rolled doubles!");
     }
 
     public static int rollDice(){
@@ -26,7 +27,7 @@ public class Doubles {
 
     public static void printDice(int dice1, int dice2){
         System.out.println("Dice 1: " + dice1);
-        System.out.println("Dice 2: " + dice2);
+        System.out.println("Dice 2: " + dice2 + "\n");
     }
 }
 
