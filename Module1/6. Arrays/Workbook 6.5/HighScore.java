@@ -7,6 +7,14 @@ public class HighScore {
 
         System.out.print("Here are the scores: <score elements>");
 
+        int[] score ={14775, 48328, 7928, 27102, 21787, 21063, 38096, 42711, 32863, 23707};
+
+
+        System.out.println(" Here are the scores:");
+        for(int i = 0; i < score.length; i++){
+            System.out.print(i + "");
+        }
+
         System.out.println("\n\nThe highest score is: " + highScore + ". Give that man a cookie!");
         
     }    

@@ -47,10 +47,6 @@ public class Pokerito {
         String  computerCard = randomCard();
         System.out.println(computerCard);
 
-
-
-
-
         int yourMatches = 0;
         int computerMatches =0;
         
@@ -68,7 +64,20 @@ public class Pokerito {
          *      <print card>
          *      ...
          */
+        System.out.println("Now, the dealer will draw five cards. Press enter to continue.");
+        scan.nextLine();
+        for(int i = 1; i <= 5; i++){
+           String river = randomCard();
 
+           if(river.equals(computerCard)){
+                computerMatches++;
+           }
+           if(river.equals(userCard)){
+                yourMatches++;
+           }
+           System.out.println("Card " + i + "\n");
+           System.out.println(river);
+        }
         /** Task 5 - Get the winner
          * 
          * • Count your number of matches.
@@ -80,6 +89,21 @@ public class Pokerito {
          * • If the computer has more matches, print: The computer wins! 
          * • If the matches are equal, print: everyone wins!.
          */
+
+        System.out.println("Your number of matches: " + yourMatches);
+        System.out.println("Computer number of matches: " + computerMatches);
+       
+        if(yourMatches > computerMatches){
+           System.out.println("\nYou win!");
+        } else if (computerMatches > yourMatches){
+            System.out.println("\nThe computer wins!");
+        } else if(computerMatches == 0 && yourMatches ==0){
+            System.out.println("\nThere are no wins.");
+        }else{
+            System.out.println("\nEveryone wins!");
+        }
+
+        
 
          scan.close();
     }
