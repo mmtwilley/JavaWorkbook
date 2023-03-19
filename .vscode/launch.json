@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "testing",
+            "request": "launch",
+            "mainClass": "testing",
+            "projectName": "JavaWorkbook_b84c44ae"
+        },
+        {
+            "type": "java",
             "name": "Launch DiceJack",
             "request": "launch",
             "mainClass": "Workbook_Answers.Function.Dice_Project.DiceJack",

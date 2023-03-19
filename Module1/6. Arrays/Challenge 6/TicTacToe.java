@@ -7,7 +7,16 @@ public class TicTacToe {
         
             System.out.println("\nLet's play tic tac toe");
 
-            //Task 1: Create an array with three rows of '_' characters.
+            char[][] board = new char[3][3];
+
+            for(int i = 0; i < board.length; i++){
+                for(int j = 0; j < board[i].length; j++){
+                      board[i][j] = '_';
+                }
+            }
+             
+
+            printBoard(board);
 
             //Task 2: Call the function printBoard();
 
@@ -48,7 +57,18 @@ public class TicTacToe {
      *      • separate each row by two lines. 
      *      • each row precedes a tab of space
      *      • each character in the grid has one space from the other character
-     */        
+     */ 
+    
+     public static void printBoard(char[][] board){
+        System.out.println();
+        for(int i = 0; i < board.length; i++){
+          System.out.print("\n");
+          for(int j = 0; j < board[i].length;j++){
+            System.out.print(board[i][j] + " ");
+          }
+          System.out.println();
+        }
+     }
 
    /** Task 4 - Write a function that lets the user choose a spot
      * Function name – askUser

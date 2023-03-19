@@ -17,7 +17,7 @@ public class PizzaDelivery {
         
         // Task 1 here
         for(int i = 0; i < toppings.length; i++ ){
-           System.out.println(i + ".");
+           System.out.print(i + ".");
            toppings[i] = scan.next();
         }
         
