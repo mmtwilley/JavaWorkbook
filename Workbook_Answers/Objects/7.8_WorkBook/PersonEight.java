@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class PersonSeven {
+public class PersonEight {
     private String name;
     private String nationality;
     private String dateOfBirth;
@@ -10,7 +10,7 @@ public class PersonSeven {
 
     
     
-    public PersonSeven(String name, String nationality, String dateOfBirth,int seatNumber){
+    public PersonEight(String name, String nationality, String dateOfBirth,int seatNumber){
         this.name = name;
         this.nationality = nationality;
         this.dateOfBirth = dateOfBirth;
@@ -19,7 +19,7 @@ public class PersonSeven {
     }
 
 
-    public PersonSeven (PersonSeven source){
+    public PersonEight (PersonEight source){
         this.name = source.name;
         this.nationality = source.nationality;
         this.dateOfBirth = source.dateOfBirth;
@@ -60,7 +60,7 @@ public class PersonSeven {
     }
 
     public String[] setPassport(){
-        return this.passport = new String[]{this.name, this.nationality, this.dateOfBirth};
+        return this.passport = new String[]{name, nationality,dateOfBirth};
     }
 
     public int setSeatNumber(int seatNumber){
@@ -78,12 +78,7 @@ public class PersonSeven {
 
     public boolean applyPassport(){
         int number = (int)(Math.random() * 2);
-        switch(number){
-            case(1):
-            return true;
-        default:
-            return false;
-        }
+        return number == 1;
     }
     public int chooseSeat(){
         return(int)(Math.random() * 11 + 1);
