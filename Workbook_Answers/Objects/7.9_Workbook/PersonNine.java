@@ -75,7 +75,7 @@ public class PersonNine {
 
 
     public void chooseSeat() {
-        seatNumber = ((int) (Math.random() * 11 + 1));
+        this.seatNumber = ((int) (Math.random() * 11 + 1));
     }
     
     public String toString(){

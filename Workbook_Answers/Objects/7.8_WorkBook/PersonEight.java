@@ -15,7 +15,7 @@ public class PersonEight {
         this.nationality = nationality;
         this.dateOfBirth = dateOfBirth;
         this.passport = new String[3];
-        this.seatNumber = chooseSeat();
+        this.seatNumber = seatNumber;
     }
 
 
@@ -24,6 +24,7 @@ public class PersonEight {
         this.nationality = source.nationality;
         this.dateOfBirth = source.dateOfBirth;
         this.seatNumber = source.seatNumber;
+        this.passport = Arrays.copyOf(source.passport, source.passport.length);
     }
 
 
@@ -59,8 +60,8 @@ public class PersonEight {
         return this.dateOfBirth = dateOfBirth;
     }
 
-    public String[] setPassport(){
-        return this.passport = new String[]{name, nationality,dateOfBirth};
+    public void setPassport(){
+     this.passport = new String[]{this.name, this.nationality,this.dateOfBirth};
     }
 
     public int setSeatNumber(int seatNumber){
@@ -69,11 +70,11 @@ public class PersonEight {
 
     
     public String toString(){
-        return "Name: " + this.name + "\n" +
-        "Nationality: " + this.nationality + "\n" +
-        "DOB : " + this.dateOfBirth + "\n" + 
-        "Passport: " + Arrays.toString(this.passport) + "\n" +
-        "Seat Number : " + this.seatNumber + "\n";
+        return "Name: " + name + "\n" + "Nationality: " + 
+        nationality + "\n" + "Date of Birth: " + 
+        dateOfBirth + "\n" + "Seat Number: " +
+        seatNumber + "\n" + "Passport: " + 
+        Arrays.toString(passport) + "\n";
     }
 
     public boolean applyPassport(){
