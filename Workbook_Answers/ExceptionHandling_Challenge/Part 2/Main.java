@@ -61,7 +61,7 @@ public class Main {
                 scanner.next();
                 continue;
             }
-            
+              
             double rating = scanner.nextDouble();
             
             If(incorrectRating(choice)) continue;

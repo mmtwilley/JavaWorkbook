@@ -1,4 +1,3 @@
-import java.util.HashMap;
 import java.util.Map;
 
 public class Team {
@@ -7,8 +6,8 @@ public class Team {
     private Map<String, String> players;
 
     public Team(String name) {
-        this.name = name;
-        this.players = new HashMap<>();
+        setName(name);
+        this.players = new Map<>();
     }
     
     public String getName() {
@@ -16,6 +15,9 @@ public class Team {
     }
 
     public void setName(String name) {
+        if(name.isBlank() || name == null){
+            throw new IllegalArguementException("Enter a valid name");
+        }
         this.name = name;
     }
 
@@ -24,7 +26,6 @@ public class Team {
     }
 
     public void setPlayer(String position, String player) {
-        this.players.put(position, player);
-    }
-    
+        return this.players.put(position,player);
+    }    
 }

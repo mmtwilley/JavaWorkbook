@@ -1,6 +1,3 @@
-import model.Game;
-import model.Team;
-
 public class Main {
 
     public static void main(String[] args) {
