@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Workbook_Answers.ExceptionalHandling_Extra.Main",
+            "projectName": "JavaWorkbook_77ba01fd"
+        },
+        {
+            "type": "java",
             "name": "ExampleOne",
             "request": "launch",
             "mainClass": "ExampleOne",
