@@ -16,7 +16,7 @@ public class Team {
 
     public void setName(String name) {
         if(name.isBlank() || name == null){
-            throw new illegalArguementException("Enter a valid name");
+            throw new IllegalArguementException("Enter a valid name");
         }
         this.name = name;
     }

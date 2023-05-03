@@ -1,6 +1,3 @@
-import model.Game;
-import model.Team;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -21,6 +18,7 @@ public class Main {
 
         Game game = new Game("Etihad Stadium");
         game.begin(bulls, pistons);
+        System.out.println(game.details());
     }
 
 }
