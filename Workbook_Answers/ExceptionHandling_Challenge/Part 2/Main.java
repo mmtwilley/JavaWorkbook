@@ -45,7 +45,7 @@ public class Main {
 
             int choice = scanner.nextInt();
 
-            If(incorrectChoice(choice)) continue;
+            if(incorrectChoice(choice)) continue;
             return choice;
         }
     }
@@ -64,7 +64,7 @@ public class Main {
             
             double rating = scanner.nextDouble();
             
-            If(incorrectRating(choice)) continue;
+            if(incorrectRating(choice)) continue;
 
             return rating;
          }
