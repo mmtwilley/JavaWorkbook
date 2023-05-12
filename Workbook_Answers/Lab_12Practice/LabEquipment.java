@@ -9,6 +9,12 @@ public abstract class LabEquipment{
         setModel(model);
         setYear(year);
     }
+
+    public LabEquipment(LabEquipment labEquipment){
+        setMaufacturer(labEquipment.manufacturer);
+        setModel(labEquipment.model);
+        setYear(labEquipment.year);
+    }
     
 
     public void setMaufacturer(String manufacturer){
@@ -45,5 +51,7 @@ public abstract class LabEquipment{
     }
 
     public abstract String performMaintenance();
+
+    public abstract LabEquipment clone();
 
 }

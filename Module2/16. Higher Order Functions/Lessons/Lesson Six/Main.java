@@ -6,10 +6,18 @@ public class Main {
         
         // Creating Stream from Datasource: Array
         String[] greetings = new String[]{"Hello!", "Hola!", "Bonjour!", "Hallo!"};
+        Arrays.stream(greetings).forEach(greeting -> system.out.println(greeting));
 
+        System.put.println("/n/n")
 
         // Creating Stream from Datasource: File
-        Path path = Paths.get("path to file");
+        try{
+            Path path = Paths.get("chorus.txt");
+        Files.lines(path).forEach(lines -> System.out.println);
+        } catch(IOExpection exception){
+            System.out.println(exception);
+        }
+        
 
     }
 }
