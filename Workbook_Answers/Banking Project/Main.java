@@ -9,7 +9,9 @@ import pojo.Credit;
 public class Main {
 
     public static void main(String[] args) {
-        
+        AccountRepository repository = new AccountRepository();
+
+
         // Assume these were obtained from user input.
         List<Account> accounts = Arrays.asList(
             new Checking("A1234B", new BigDecimal("500.00")),
@@ -18,6 +20,13 @@ public class Main {
             new Credit("A1534B", new BigDecimal("0.50")),
             new Credit("G4567H", new BigDecimal("200.00"))
         );
+
+
+        accounts.forEach( account -> {
+            repository.createAccount(account);
+        })
+
+        Account account = 
 
 
     }
